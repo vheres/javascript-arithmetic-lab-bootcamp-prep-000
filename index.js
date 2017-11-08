@@ -36,7 +36,9 @@ function makeInt(n) {
   else if (n === NaN) {
     return true
   }
-  return n
+  else {
+    return 0
+  }
 }
 
 function preserveDecimal(n) {
