@@ -30,10 +30,16 @@ function dec(n) {
 
 function makeInt(n) {
   parseInt('n', 10)
+  if (n === NaN) {
+    return 'true'
+  }
   return n
 }
 
 function preserveDecimal(n) {
   parseFloat('n')
+  if (n === NaN) {
+    return 'true'
+  }
   return n
 }
