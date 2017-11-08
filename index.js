@@ -29,7 +29,10 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  parseInt(n, 1000)
+  if (n == 0x2328) {
+    return 0
+  }
+  parseInt(n, 10)
   return n
 }
 
