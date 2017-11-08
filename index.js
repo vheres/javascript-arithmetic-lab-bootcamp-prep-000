@@ -30,7 +30,7 @@ function dec(n) {
 
 function makeInt(n) {
   parseInt('n', 10)
-  if (isNan(n)) {
+  if (n === NaN) {
     return true
   }
   return n
@@ -38,7 +38,7 @@ function makeInt(n) {
 
 function preserveDecimal(n) {
   parseFloat('n')
-  if (isNan(n)) {
+  if (n === NaN) {
     return true
   }
   return n
